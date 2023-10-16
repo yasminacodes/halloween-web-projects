@@ -1,0 +1,83 @@
+body {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Young Serif', serif;
+    background-color: black;
+    color: white;
+}
+
+.sec {
+    min-height: 100vh;
+    width: 100%;
+}
+
+.sec--first {
+    height: 100vh;
+    background-color: black;
+    background-image: url(../img/fondo-halloween-404.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.sec--first_article {
+    padding-left: 30vw;
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec--first_article__title {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.sec--first_article__button-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.sec--first_article__button-container__button {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+    background-color: var(--purple-strong);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    -webkit-transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    transform: scale(0.9);
+}
+
+.sec--first_article__button-container__button:hover {
+    background-color: var(--purple-strong);
+    cursor: pointer;
+    color: white;
+    transform: scale(1.0);
+}
+
+.sec--first_article__text {
+    font-size: 1.0rem;
+    color: white;
+    margin-top: 30px;
+}
