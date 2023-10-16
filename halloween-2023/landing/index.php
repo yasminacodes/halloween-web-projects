@@ -47,13 +47,22 @@
             <p class="sec__article__text sec--second__article__text">Practica programación web con estos proyectos mientras te metes en el mood para Halloween</p>
 
             <ul class="sec__article__text sec--second__article__ul">
-                <li class="sec__article__ul__li sec--second__article__ul__li">Landing page de Halloween</li>
+                <li class="sec__article__ul__li sec--second__article__ul__li">
+                    <a href="/" class="sec__article__ul__li__link sec--second__article__ul__li__link">Landing page de Halloween</a>
+                </li>
                 <li class="sec__article__ul__li sec--second__article__ul__li">Contador regresivo para Halloween (Llega el 17/10/2023)</li>
                 <li class="sec__article__ul__li sec--second__article__ul__li">Diseña tu calabaza (Llega el 20/10/2023)</li>
                 <li class="sec__article__ul__li sec--second__article__ul__li">Prepara la poción (juego) (Llega el 23/10/2023)</li>
                 <li class="sec__article__ul__li sec--second__article__ul__li">Galería interactiva de disfraces (Llega el 27/10/2023)</li>
                 <li class="sec__article__ul__li sec--second__article__ul__li">Truco o trato (juego) (Llega el 31/10/2023)</li>
             </ul>
+
+            <p class="sec__article__text sec--second__article__text">
+                <em class="sec__article__text__em sec--second__article__text__em">
+                    Quieres ver el código?
+                </em>
+            </p>
+            <p class="sec__article__text sec--second__article__text">Se encuentra disponible en <a class="sec__article__link sec--second__article__link" href="https://github.com/yasminacodes/web-projects" target="__blank">este repositorio de Github</a></p>
             
             <p class="sec__article__text sec--second__article__text">
                 <em class="sec__article__text__em sec--second__article__text__em">

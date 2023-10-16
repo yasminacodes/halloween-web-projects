@@ -296,6 +296,23 @@ body {
     list-style-type: "\1F383";
     margin-left: 5vw;
     padding-left: 1vw;
+    color: var(--purple-soft);
+}
+
+.sec--second__article__link {
+    text-decoration: underline;
+}
+
+.sec--second__article__ul__li__link,
+.sec--second__article__link {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.sec--second__article__ul__li__link:hover,
+.sec--second__article__link:hover {
+    cursor: pointer;
+    color: var(--purple-strong);
 }
 
 .sec--third__article__buttons {
