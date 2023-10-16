@@ -10,9 +10,13 @@
     <link rel="stylesheet" href="halloween-2023/landing/css/style.css" />
     <link rel="stylesheet" href="halloween-2023/landing/css/landing.css" />
 
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+
+    <link rel="canonical" href="https://yasminacodes.es" />
 </head>
 
 <body>

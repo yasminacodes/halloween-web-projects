@@ -9,9 +9,13 @@
     <link rel="stylesheet" href="halloween-2023/landing/css/style.css" />
     <link rel="stylesheet" href="halloween-2023/landing/css/404.css" />
 
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
+
+    <meta name="robots" content="noindex,follow" />
 </head>
 <body>
 <section id="inicio" class="sec sec--first">
