@@ -1,0 +1,185 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--purple-darker);
+    min-height: 100vh;
+    width: 100%;
+    color: white;
+    font-family: 'Young Serif', serif;
+    position: relative;
+}
+
+@keyframes textGlow {
+    from {
+      text-shadow: 0 0 10px var(--yellow-light), 0 0 20px var(--yellow-light), 0 0 30px var(--orange-strong), 0 0 40px var(--orange-strong), 0 0 50px var(--orange-strong), 0 0 60px var(--orange-strong), 0 0 70px var(--orange-strong);
+    }
+    to {
+      text-shadow: 0 0 20px var(--yellow-light), 0 0 30px var(--orange-regular), 0 0 40px var(--orange-regular), 0 0 50px var(--orange-regular), 0 0 60px var(--orange-regular), 0 0 70px var(--orange-regular), 0 0 80px var(--orange-regular);
+    }
+}
+
+@-webkit-keyframes textGlow {
+    from {
+      text-shadow: 0 0 10px var(--yellow-light), 0 0 20px var(--yellow-light), 0 0 30px var(--orange-strong), 0 0 40px var(--orange-strong), 0 0 50px var(--orange-strong), 0 0 60px var(--orange-strong), 0 0 70px var(--orange-strong);
+    }
+    to {
+      text-shadow: 0 0 20px var(--yellow-light), 0 0 30px var(--orange-regular), 0 0 40px var(--orange-regular), 0 0 50px var(--orange-regular), 0 0 60px var(--orange-regular), 0 0 70px var(--orange-regular), 0 0 80px var(--orange-regular);
+    }
+}
+
+.container__title {
+    font-size: 2rem;
+    color: white;
+    -webkit-animation: textGlow 1.5s ease-in-out infinite alternate;
+    animation: textGlow 1.5s ease-in-out infinite alternate;
+    margin-bottom: 30px;
+}
+
+.container__main {
+    width: 80%;
+    max-width: 1200px;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.container__main__view {
+    position: relative;
+    background-image: url(../img/campo-calabazas-fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__main__view__dim {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+}
+
+.container__main__selector {
+    width: 29%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+.container__main__selector__title {
+    font-size: 1.0rem;
+    color: var(--yellow-light);
+    text-align: center;
+    width: 100%;
+}
+
+.image-hidden {
+    display: none;
+}
+
+.container__main__view__img {
+    height: 80%;
+    width: 100%;
+    position: relative;
+}
+
+.container__main__selector__element {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.container__main__selector__element__next,
+.container__main__selector__element__back {
+    width: 50px;
+    height: 50px;
+    background-color: var(--orange-regular);
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    -webkit-mask-position: center;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: contain;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    -webkit-transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.container__main__selector__element__back {
+    mask-image: url(../img/caret-left-solid.svg);
+    -webkit-mask-image: url(../img/caret-left-solid.svg);
+}
+
+.container__main__selector__element__next {
+    mask-image: url(../img/caret-right-solid.svg);
+    -webkit-mask-image: url(../img/caret-right-solid.svg);
+}
+
+.container__main__selector__element__back:hover,
+.container__main__selector__element__back:active,
+.container__main__selector__element__next:hover,
+.container__main__selector__element__next:active {
+    background-color: var(--yellow-light);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.container__main__selector__element__image {
+    width: 100px;
+    height: 100px;
+    background-color: var(--purple-regular);
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container__main__selector__element__image__img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.container__main__view__img__element {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+}
+
+.container__back {
+    margin-top: 30px;
+    font-size: 1.0rem;
+    color: var(--yellow-light);
+    background-color: var(--orange-strong);
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.container__back:hover {
+    cursor: pointer;
+    color: white;
+    background-color: var(--orange-regular);
+}
