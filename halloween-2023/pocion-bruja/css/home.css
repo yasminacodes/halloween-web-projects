@@ -1,0 +1,268 @@
+@keyframes textGlow {
+    from {
+      text-shadow: 0 0 10px var(--purple-soft), 0 0 20px var(--purple-soft), 0 0 30px var(--purple-strong), 0 0 40px var(--purple-strong), 0 0 50px var(--purple-strong), 0 0 60px var(--purple-strong), 0 0 70px var(--purple-strong);
+    }
+    to {
+      text-shadow: 0 0 20px var(--purple-soft), 0 0 30px var(--purple-regular), 0 0 40px var(--purple-regular), 0 0 50px var(--purple-regular), 0 0 60px var(--purple-regular), 0 0 70px var(--purple-regular), 0 0 80px var(--purple-regular);
+    }
+}
+
+@-webkit-keyframes textGlow {
+    from {
+      text-shadow: 0 0 10px var(--purple-soft), 0 0 20px var(--purple-soft), 0 0 30px var(--purple-strong), 0 0 40px var(--purple-strong), 0 0 50px var(--purple-strong), 0 0 60px var(--purple-strong), 0 0 70px var(--purple-strong);
+    }
+    to {
+      text-shadow: 0 0 20px var(--purple-soft), 0 0 30px var(--purple-regular), 0 0 40px var(--purple-regular), 0 0 50px var(--purple-regular), 0 0 60px var(--purple-regular), 0 0 70px var(--purple-regular), 0 0 80px var(--purple-regular);
+    }
+}
+
+body {
+    background-color: black;
+    min-height: 100vh;
+    width: 100%;
+    font-family: 'Young Serif', serif;
+    background-color: black;
+}
+
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.container__title {
+    font-size: 2rem;
+    color: white;
+    -webkit-animation: textGlow 1.5s ease-in-out infinite alternate;
+    animation: textGlow 1.5s ease-in-out infinite alternate;
+    margin-bottom: 30px;
+}
+
+.container__game {
+    position: relative;
+    width: 90%;
+    max-width: 1000px;
+    height: 60vh;
+    z-index: 1;
+}
+
+.container__game__background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    object-fit: cover;
+}
+
+.container__game__witch {
+    position: absolute;
+    height: 50vh;
+    right: 5vw;
+    bottom: 3vh;
+    object-fit: contain;
+}
+
+.container__game__witch--pink,
+.container__game__witch--green {
+    position: absolute;
+    height: 42vh;
+    right: 5vw;
+    bottom: 3vh;
+    object-fit: contain;
+}
+
+.container__game__cauldron {
+    position: absolute;
+    height: 30vh;
+    left: 5vw;
+    bottom: 1vh;
+    object-fit: contain;
+}
+
+.container__game__cauldron--fire,
+.container__game__cauldron--potion-green,
+.container__game__cauldron--potion-pink {
+    position: absolute;
+    height: 50vh;
+    left: 2vw;
+    bottom: 1vh;
+    object-fit: contain;
+}
+
+.container__game__bubble {
+    position: absolute;
+    background-color: transparent;
+    background-image: url(../img/witchs-cauldron/bubble.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (min-width: 1280px) {
+    .container__game__bubble {
+        right: 15vw;
+        top: 2vh;
+        height: 40vh;
+        width: 40vh;
+        padding-left: 3vw;
+        padding-right: 5vw;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+    }
+}
+
+@media (min-width: 950px) and (max-width: 1279px) {
+    .container__game__bubble {
+        left: 30vw;
+        top: 5vh;
+        height: 30vw;
+        width: 30vw;
+        padding-left: 3vw;
+        padding-right: 5vw;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+    }
+}
+
+@media (max-width: 949px) {
+    .container__game__bubble {
+        left: 5vw;
+        top: 1vh;
+        width: 55vw;
+        height: 55vw;
+        padding-left: 7vw;
+        padding-right: 10vw;
+        padding-top: 10vw;
+        padding-bottom: 10vw;
+    }
+}
+
+@media (min-width: 768px) {
+    .container__game__bubble__title {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .container__game__bubble__text {
+        font-size: 1.0rem;
+        text-align: center;
+    }
+}
+
+@media (max-width: 767px) {
+    .container__game__bubble__title {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .container__game__bubble__text {
+        font-size: 0.7rem;
+        text-align: center;
+    }
+}
+
+.container__game__bubble__button {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: var(--purple-regular);
+    color: white;
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    border-radius: 12px;
+    margin-top: 5px;
+}
+
+.container__game__bubble__button:hover,
+.container__game__bubble__button:active {
+    cursor: pointer;
+    background-color: var(--purple-strong);
+}
+
+@media (min-width: 768px) {
+    .container__game__bubble__button {
+        font-size: 1.0rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .container__game__bubble__button {
+        font-size: 0.7rem;
+    }
+}
+
+
+.container__game__cauldron--fire-hidden,
+.container__game__cauldron--potion-green-hidden,
+.container__game__cauldron--potion-pink-hidden,
+.container__game__witch--pink-hidden,
+.container__game__witch--green-hidden {
+    display:none;
+}
+
+.container__buttons {
+    width: 100%;
+    min-height: 10vh;
+    background-color: var(--purple-regular);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+
+.container__game__object {
+    height: 10vh;
+    width: 10vh;
+    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+    transition: transform 0.5s ease, background-color 0.5s ease;
+    -webkit-transition: transform 0.5s ease, background-color 0.5s ease;
+    background-color: transparent;
+    border-radius: 100%;
+}
+
+.container__game__object:hover {
+    cursor: pointer;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    background-color: white;
+}
+
+.container__game__object:active {
+    cursor: pointer;
+    background-color: var(--purple-strong);
+}
+
+.container__game__object__img {
+    height: 12vh;
+    width: 14vh;
+}
+
+.warn-text-hidden,
+.you-text-hidden,
+.lose-text-hidden {
+    display: none;
+}
+
+.container__game__bubble__current-img {
+    width: 50%;
+    height: 50%;
+}
+
+.container__game__bubble__current-img--hidden {
+    display: none;
+}

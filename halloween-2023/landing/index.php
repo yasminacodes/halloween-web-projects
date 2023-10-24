@@ -62,7 +62,11 @@
                         Diseña tu calabaza
                     </a>
                 </li>
-                <li class="sec__article__ul__li sec--second__article__ul__li">Prepara la poción (juego) (Llega el 23/10/2023)</li>
+                <li class="sec__article__ul__li sec--second__article__ul__li">
+                    <a href="/pocion-bruja" class="sec__article__ul__li__link sec--second__article__ul__li__link">
+                        La poción de la bruja
+                    </a>
+                </li>
                 <li class="sec__article__ul__li sec--second__article__ul__li">Galería interactiva de disfraces (Llega el 27/10/2023)</li>
                 <li class="sec__article__ul__li sec--second__article__ul__li">Truco o trato (juego) (Llega el 31/10/2023)</li>
             </ul>
