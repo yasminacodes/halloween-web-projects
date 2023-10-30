@@ -67,8 +67,6 @@
                         La poción de la bruja
                     </a>
                 </li>
-                <li class="sec__article__ul__li sec--second__article__ul__li">Galería interactiva de disfraces (Llega el 27/10/2023)</li>
-                <li class="sec__article__ul__li sec--second__article__ul__li">Truco o trato (juego) (Llega el 31/10/2023)</li>
             </ul>
 
             <p class="sec__article__text sec--second__article__text">
