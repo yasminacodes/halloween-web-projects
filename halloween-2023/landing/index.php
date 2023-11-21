@@ -74,7 +74,7 @@
                     Quieres ver el código?
                 </em>
             </p>
-            <p class="sec__article__text sec--second__article__text">Se encuentra disponible en <a class="sec__article__link sec--second__article__link" href="https://github.com/yasminacodes/halloween-web-2023" target="__blank">este repositorio de Github</a></p>
+            <p class="sec__article__text sec--second__article__text">Se encuentra disponible en <a class="sec__article__link sec--second__article__link" href="https://github.com/yasminacodes/halloween-web-projects" target="__blank">este repositorio de Github</a></p>
             
             <p class="sec__article__text sec--second__article__text">
                 <em class="sec__article__text__em sec--second__article__text__em">
